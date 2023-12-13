@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/ftstyles.css" />
+
+    <title>Knight Online FT Counter</title>
+  </head>
+  <body>
+    <div class="sound-player">
+      <div class="controls">
+        <button id="play">Başlat</button>
+        <button id="pause">Duraklat</button>
+        <button id="resetButton">Sıfırla</button>
+        <button id="rewind">1 Saniye Geri</button>
+        <button id="forward">1 Saniye İleri</button>
+      </div>
+      <div class="timer"><span id="current-time">0:00</span> / 30:00</div>
+      <div id="progress-container">
+        <progress id="progress" value="0" max="100"></progress>
+        <div id="progress-cursor"></div>
+      </div>
+    </div>
+
+    <form id="radioForm">
+      <label class="radio-label">
+        <input
+          type="radio"
+          name="radioGroup"
+          value="radio00"
+          class="radio-input"
+        />
+        <span class="radio-custom">0 Saniye Gecikme</span>
+      </label>
+      <label class="radio-label">
+        <input
+          type="radio"
+          name="radioGroup"
+          value="radio01"
+          class="radio-input"
+        />
+        <span class="radio-custom">1 Saniye Gecikme</span>
+      </label>
+      <label class="radio-label">
+        <input
+          type="radio"
+          name="radioGroup"
+          value="radio02"
+          class="radio-input"
+        />
+        <span class="radio-custom">2 Saniye Gecikme</span>
+      </label>
+      <label class="radio-label">
+        <input
+          type="radio"
+          name="radioGroup"
+          value="radio03"
+          class="radio-input"
+        />
+        <span class="radio-custom">3 Saniye Gecikme </span>
+      </label>
+      <label class="radio-label">
+        <input
+          type="radio"
+          name="radioGroup"
+          value="radio003"
+          class="radio-input"
+        />
+        <span class="radio-custom">3 Saniye Gecikme (2)</span>
+      </label>
+      <label class="radio-label">
+        <input
+          type="radio"
+          name="radioGroup"
+          value="radio04"
+          class="radio-input"
+        />
+        <span class="radio-custom">4 Saniye Gecikme</span>
+      </label>
+      <label class="radio-label">
+        <input
+          type="radio"
+          name="radioGroup"
+          value="radio05"
+          class="radio-input"
+        />
+        <span class="radio-custom">5 Saniye Gecikme</span>
+      </label>
+
+      <div id="buttonContainer"></div>
+    </form>
+
+    <script src="assets/js/ftscript.js"></script>
+  </body>
+</html>
